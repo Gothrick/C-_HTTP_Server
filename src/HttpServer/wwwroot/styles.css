@@ -1,0 +1,42 @@
+body {
+    background-color: #111;
+    color: #ddd;
+    font-family: system-ui, sans-serif;
+    padding: 2rem;
+}
+
+h1 {
+    color: white;
+}
+
+a {
+    color: #4da3ff;
+}
+
+form {
+    background: white;
+    color: #222;
+    padding: 20px;
+    display: inline-block;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 200px;
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #0078d4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005ea2;
+}

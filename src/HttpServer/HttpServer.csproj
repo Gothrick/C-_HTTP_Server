@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>SimpleHttpServer</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Les fichiers statiques sont copiés à côté de l'exécutable : le serveur
+         fonctionne donc quel que soit le dossier d'où on le lance. -->
+    <Content Include="wwwroot\**" CopyToOutputDirectory="PreserveNewest" />
+    <InternalsVisibleTo Include="HttpServer.Tests" />
+  </ItemGroup>
+
+</Project>
